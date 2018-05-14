@@ -5,12 +5,64 @@
 
     </head>
 
-    <!---->
-
     <body>
-        <h1 class ="center">Rock Paper Scissor</h1>
+        <h1 class ="center"><br><br>Rock Paper Scissors<br><br></h1>
+    <!--a message about the site and instructions how to play-->
+        <h2 class = "center">
+            Welcome 
+            <br>
+            <br> 
+            Do you need instructions on how to play? If so, click "Instructions"<br/>
+            <br>
+            If not, click "Play!"
+        </h2>
 
+        <button onclick = "playfunction()" id = "playButton">Play!</button>
+        <button onclick = "instructions()" id = "instrButton">Instructions</button>
+
+        <!-- instruction info (this only comes up if instructios is clicked) -->
+
+    <!-- gets your name  -->
+        <input type = "text" name = "username">
+
+    <!-- once play is clicked, it brings a page where you get to choose what you would like on the left 
+    and it has your name on the top of that column -->
+       <div id = "on_play">
+            <h2 class = "center"> Welcome (insert name here)</h2>
+            <h3 class = "center">Start by making a selection</h3>
+        <!-- on the right column, it has computer  -->
+            <div class = "row">
+                <div class = "column">
+
+                    <h2 class = "center">Username</h2>
+                    <img class = "rps_image" src = "https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-027-512.png">
+                    <img class = "rps_image" src = "https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-019-512.png">
+                    <img class = "rps_image" src = "https://png.pngtree.com/element_pic/17/02/09/08ad61b612011dad5c3e220d1663cc28.jpg">
+                </div>
+
+                <div class = "column">
+                    
+                    <h2 class = "center">Computer</h2>
+                    <img class = "rps_image" src = "https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-027-512.png">
+                    <img class = "rps_image" src = "https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-019-512.png">
+                    <img class = "rps_image" src = "https://png.pngtree.com/element_pic/17/02/09/08ad61b612011dad5c3e220d1663cc28.jpg">
+
+                </div>
+            </div>
+        </div>
+
+        <div id = "learnGame">
+
+            <h2>Here are the instructions.</h2>
+
+        </div>
+    <!-- when you choose your item, the computer is triggered to generate their item  -->
+
+    <!-- a function is called to compare those items and decide the winner -->
+
+    <!-- a big message is dispalyed if you win; a smaller message is displayed if you lose "Sorry you lose" -->
         <script src="./js/main.js"></script>
     </body>
+
 </html>
 

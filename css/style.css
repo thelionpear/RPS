@@ -1,3 +1,40 @@
 .center {
     text-align: center;
 }
+
+.column {
+    float: left;
+    width: 45%;
+    border: solid 5px black;
+}
+
+.rps_image {
+    width: 300px;
+    margin-left: 100px;
+    border: solid 1px black; 
+    margin-bottom: 10px; 
+}
+
+h1 {
+    background-color: gray; 
+    border-bottom: solid 2px black; 
+    font-size: 40px; 
+}
+
+#on_play {
+    display: none; 
+}
+
+button {
+   font-size: 25px;
+   margin: 10px; 
+   width: 47%;
+   border: 1px solid black;
+   color: white;
+   background-color: lightgreen; 
+}
+
+#learnGame {
+    display: none; 
+    border: 1px solid black;
+}
