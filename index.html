@@ -23,21 +23,22 @@
         <!-- instruction info (this only comes up if instructios is clicked) -->
 
     <!-- gets your name  -->
-        <input type = "text" name = "username">
+        <input type = "text" name = "username" id = "username_input"> Username</input>
+        <button onclick = "username_submit()">Submit Username</button>
 
     <!-- once play is clicked, it brings a page where you get to choose what you would like on the left 
     and it has your name on the top of that column -->
        <div id = "on_play">
-            <h2 class = "center"> Welcome (insert name here)</h2>
+            <h2 class = "center" id = "welcome"> </h2>
             <h3 class = "center">Start by making a selection</h3>
         <!-- on the right column, it has computer  -->
             <div class = "row">
                 <div class = "column">
 
-                    <h2 class = "center">Username</h2>
-                    <img class = "rps_image" src = "https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-027-512.png">
-                    <img class = "rps_image" src = "https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-019-512.png">
-                    <img class = "rps_image" src = "https://png.pngtree.com/element_pic/17/02/09/08ad61b612011dad5c3e220d1663cc28.jpg">
+                    <h2 class = "center" id = "user_side" >Username</h2>
+                    <img onclick = "user_selection('rock')" class = "rps_image" src = "https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-027-512.png">
+                    <img onclick = "user_selection('paper')" class = "rps_image" src = "https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-019-512.png">
+                    <img onclick = "user_selection('scissors')" class = "rps_image" src = "https://png.pngtree.com/element_pic/17/02/09/08ad61b612011dad5c3e220d1663cc28.jpg">
                 </div>
 
                 <div class = "column">
